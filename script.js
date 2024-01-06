@@ -10,7 +10,7 @@ let computerScore = 0;
 
 function ifRock() {
     playerChoice = c1;
-    document.querySelector('.p1').setAttribute("src", "/images/rock.png");
+    document.querySelector('.p1').setAttribute("src", "images/rock.png");
     computerChoice = getComputerChoice();
     updateComputerImages();
     gameplay(playerChoice, computerChoice);
@@ -20,7 +20,7 @@ function ifRock() {
 
 function ifPaper() {
     playerChoice = c2;
-    document.querySelector('.p1').setAttribute("src", "/images/paper.png");
+    document.querySelector('.p1').setAttribute("src", "images/paper.png");
     computerChoice = getComputerChoice();
     updateComputerImages();
     gameplay(playerChoice, computerChoice);
@@ -30,7 +30,7 @@ function ifPaper() {
 
 function ifScissors() {
     playerChoice = c3;
-    document.querySelector('.p1').setAttribute("src", "/images/scissors.png");
+    document.querySelector('.p1').setAttribute("src", "images/scissors.png");
     computerChoice = getComputerChoice();
     updateComputerImages();
     gameplay(playerChoice, computerChoice);
@@ -56,13 +56,13 @@ function getComputerChoice() {
 
 function updateComputerImages() {
     if (computerChoice == c1) {
-        document.querySelector('.p2').setAttribute("src", "/images/rock.png");
+        document.querySelector('.p2').setAttribute("src", "images/rock.png");
 
     } else if (computerChoice == c2) {
-        document.querySelector('.p2').setAttribute("src", "/images/paper.png");
+        document.querySelector('.p2').setAttribute("src", "images/paper.png");
 
     } else if (computerChoice == c3) {
-        document.querySelector('.p2').setAttribute("src", "/images/scissors.png");
+        document.querySelector('.p2').setAttribute("src", "images/scissors.png");
 
     }
 }
