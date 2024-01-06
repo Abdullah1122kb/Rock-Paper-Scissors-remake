@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Rock Paper Scissors!</h1>
+    <h2>A simple game created by Abdullah!</h2>
+    <div class="btns">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+    </div>
+    <div class="score">
+
+        <div class="player"><img class="p1" width="180px"></div>
+        <div class="computer"><img class="p2" width="180px"></div>
+    </div>
+    <div class="result">
+        <!-- <p>Results</p> -->
+        <div class="resultBox" id="resultBox">Result</div>
+    </div>
+    <!-- <button class="reset" onclick="location.reload()">Reset!</button> -->
+    <audio autoplay id="monkey">
+        <source src="sounds/retro.mp3" type="audio/mp3">
+    </audio>
+   
+    <div class="dspsc">
+        <div id="psc">player</div>
+        <div id="csc">Comp</div>
+    </div>
+    <div class="pll">
+        <button id="start" onclick="document.getElementById('monkey').play()">▶</button>
+        <button id="stop" onclick="document.getElementById('monkey').pause()">⏸️</button>
+    </div>
+    <button class="reset" onclick="location.reload()">Reset!</button>
+    <footer><a href="https://github.com/Abdullah1122kb" target="_blank">Made by Abdullah Khan</a></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
